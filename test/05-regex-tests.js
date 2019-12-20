@@ -71,7 +71,7 @@ describe('05-regex-tasks', () => {
     ].forEach((str) => {
       assert(
         !result.test(str),
-        `Regex matches '${str}'`,
+        `Regex matches '${str}' ${result.test(str)}`,
       );
     });
 
@@ -84,7 +84,7 @@ describe('05-regex-tasks', () => {
     ].forEach((str) => {
       assert(
         result.test(str),
-        `Regex does not match '${str}'`,
+        `Regex does not match '${str}' ${result.test(str)}`,
       );
     });
 
